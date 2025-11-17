@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:#1f242d;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+.navbar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    padding:25px 9%;
+    background:slateblue;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+.navber .logo{
+    font-size:60px;
+    font-weight:700;
+}
+.navbar ul{
+    display:flex;
+}
+.navbar ul li{
+    list-style:none;
+    margin-left:35px;
+}
+.navbar ul li a{
+    font-size:20px;
+    font-weight:500;
+    transition:.5s;
+}
+.navbar ul li:hover a, .navbar ul li.active a{
+    /* background-color: blue; */
+    color:#7cf03d;
+}
+.home{
+    display:flex;
+    align-items:center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color:white;
+}
+.home-info h1 {
+    font-size: 50px;
+}
+.home-info h2 {
+    font-size: 30px;
+    margin-top:-10px;
+}
+.home-info p{
+    font-size:16px;
+    margin:10px 0 25px;
+}
+.home-info .btn-sci{
+    display:flex;
+    align-items:center;
+}
+.btn{
+    display:inline-block;
+    padding:10px 30px;
+    background-color: #7cf03d;
+    border:2px solid  #7cf03d ;
+    border-radius:20px;
+    box-shadow: 0 0 10px  #7cf03d ;
+    color:#1f242d;
+    font-size: 16px;
+    font-weight: 600;
+    transition:.5s;
+}
+.btn:hover{
+    background: transparent;
+    color:#7cf03d;
+    box-shadow:none;
+}
+.home-info .btn-sci .sci{
+    margin-left:20px;
+}
+.home-info .btn-sci .sci{
+    margin-left:20px;
+}
+.home-info .btn-sci .sci a{
+    display:inline-flex;
+    padding: 8px;
+    border:2px solid  #7cf03d;
+    border-radius:50%;
+    font-size:20px;
+    color: #7cf03d;
+    margin:0 4px;
+}
+
+.home-info .btn-sci .sci a:hover{
+    background-color: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px;
+}
+
+.home-image .img-box{
+    width: 35vw;
+    height: 35vw;
+    background:red;
+    border-radius:50%;
+    padding:5px;
+    position: relative;
+}
+
+.home-image .img-box::before{
+    content:'';
+    position:absolute;
+    width: 500px;
+    height:500px;
+}
+
+
+.home-image .img-box .img-items {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background:slateblue;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-image .img-box .img-items img{
+    position:absolute;
+    top:0;
+    display:block;
+    width: 85%;
+    object-fit: cover;
+}
